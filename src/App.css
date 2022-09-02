@@ -68,3 +68,9 @@ header {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@media screen and (min-width: 800px){
+  .nav{
+    flex-direction: row;
+  }
+}
