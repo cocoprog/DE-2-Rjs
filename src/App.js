@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <header className="App-header">        
-        <img src={logo} className="App-logo" alt="logo" />      
-      </header>
+      <main className="App-content">
+        <img src={logo} className="App-logo" alt="logo" />
+      </main>
     </div>
   );
 }

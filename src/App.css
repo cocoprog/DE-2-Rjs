@@ -1,6 +1,49 @@
 .App {
-  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #825742;
+  padding: 1rem 1.5rem 1rem .5rem;
+}
+
+.logo-enio { height: 4.5rem; }
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: right;
+}
+
+.nav-item {
+  font-size: 1.1rem;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: black;
+  padding: .4rem;
+  border-radius: .3rem;
+  text-decoration: none;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: burlywood;
+}
+
+/* content */
 
 .App-logo {
   height: 40vmin;
@@ -8,65 +51,20 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  .App-logo { animation: App-logo-spin infinite 20s linear; }
 }
 
-.App-header {
+.App-content {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  flex: 3;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.nav-item {
-  margin-top: 1%;
-  font-family: 'Koulen', cursive;
-  font-size: 1.1rem;
-  list-style-type: none;
-
-}
-
-.nav-item :hover {
-  color: black;
-  text-shadow: 2px 2px 2px rgba(255, 0, 208, 0.784);
-  
-}
-
-.nav-link {
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgba(10, 237, 188, 0.655);
-  text-decoration: none;
-  
-}
-
-.nav-contenedor {
-  margin: 1rem;
-  padding: 1rem;
-  box-sizing: border-box;
-  background-image: url(./marca3.png);
-  background-color: black;  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
